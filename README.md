@@ -1,7 +1,41 @@
 Migrate World Database
 ======================
 
-This repository is used to display an implementation of the Migrate API in Drupal
+This repository is used to store an implementation of the [Migrate API](http://drupal.org/project/migrate) in [Drupal](http://drupal.org/download)
 
-Drupal : http://drupal.org/download
-Migrate : http://drupal.org/project/migrate
+Installation
+============
+
+To properly use the example, please import the given database file `data/world_innodb.sql.gz` into a separate database on your system.
+
+
+Please check that you add this new database to your Drupal configuration in `sites/default/settings.php` using an `example` key in the PHP array.
+
+Here follows an example of database configuration settings. Please replace the information with your current MySQL configuration.
+
+```php
+$databases = array (
+  'default' => array (
+    'default' => array (
+      'database' => 'drupal',
+      'username' => 'root',
+      'password' => 'root',
+      'host' => 'localhost',
+      'port' => '',
+      'driver' => 'mysql',
+      'prefix' => '',
+    ),
+  'example' => array (
+      'database' => 'world_innodb',
+      'username' => 'root',
+      'password' => 'root',
+      'host' => 'localhost',
+      'port' => '',
+      'driver' => 'mysql',
+      'prefix' => '',
+    ),
+  ),
+);
+```
+
+Finish the installation by adding the `migrate_world_database` folder to your `sites/all/modules/custom` directory and enabling it in Drupal.
