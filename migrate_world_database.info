@@ -1,0 +1,5 @@
+core = "7.x"
+dependencies[] = "migrate"
+description = "Migrate module example using MySQL world database."
+files[] = "migrate_world_database.migrate.inc"
+name = "Migrate World Database"
