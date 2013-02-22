@@ -1,7 +1,7 @@
 Migrate World Database
 ======================
 
-This repository is used to store an implementation of the [Migrate API](http://drupal.org/project/migrate) in [Drupal](http://drupal.org/download)
+This repository is used to store an implementation of the [Migrate API](http://drupal.org/project/migrate) in [Drupal](http://drupal.org/download) by using the data provided by the [MySQL world example database](http://dev.mysql.com/doc/index-other.html)
 
 Installation
 ============
