@@ -1,10 +1,19 @@
 <?php
 
+/**
+ * Implements hook_migrate_api()
+ */
 function migrate_world_database_migrate_api() {
 	$api = array(
 		'api' => 2,
 	);
 	return $api;
 }
+
+/**
+ * @file
+ * Code for the Migrate World Database feature.
+ */
+include_once 'migrate_world_database.features.inc';
 
 ?>
